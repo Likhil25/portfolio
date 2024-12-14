@@ -11,12 +11,16 @@
     --cardDisplay : 0;
 }
 .rightsection1{
-    width: 50% ;
     margin-left: 12rem;
+    width: max-content !important;
+    box-shadow: var(--outside);
+
+    border-radius: 2.5rem;
 }
 .rightsection1 img{
-    width: 35vw;
-    border-radius: 1.3rem;
+    padding: 12px;
+    border-radius: 2rem;
+    width: 30vw;
 }
 body{
     background-color: var(--bgColor);
@@ -95,13 +99,18 @@ nav ul li:hover{
 }
 .firstsection{
     display: flex;
-    padding: 5rem 4rem;
+    padding: 5rem 8rem;
     background-color: var(--bgColor);
-
+    justify-content: space-evenly !important;
 }
-
 .firstsection div{
     width: 50%;
+}
+.leftsection{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
 }
 .leftsection div{
     padding-bottom: 2rem;
@@ -113,105 +122,7 @@ nav ul li:hover{
     padding: 5rem 4rem;
     font-size: large;
 }
-.button-49,
-.button-49:after {
-  width: 150px;
-  height: 76px;
-  line-height: 78px;
-  font-size: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.button-49:after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'LIKHIL';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
-}
-
-.button-49:hover:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-
-@media (min-width: 768px) {
-  .button-49,
-  .button-49:after {
-    width: 200px;
-    height: 86px;
-    line-height: 88px;
-  }
-}
 .myskills h3{
     font-size: xx-large;
     margin: 1rem 0;
@@ -254,7 +165,9 @@ nav ul li:hover{
 }
 
  .leftsection2 img{
-    width: 70%;
+    width: 60%;
+    padding: 1rem;
+    box-shadow: var(--outside);
  }
  
  .firstsection2{
@@ -436,6 +349,7 @@ form section{
 .nbtn{
     border-radius: 5rem;
     font-weight: 500;
+    width: max-content;
     color: #0056b3;
     font-size: medium;
     padding: 1rem 4rem;
